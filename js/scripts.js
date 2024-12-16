@@ -49,3 +49,52 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+function enviarEmail(){
+    let parametros = {
+        nome: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        contato: document.getElementById("phone").value,
+        mensagem: document.getElementById("message").value,
+    }
+    emailjs.send('service_xsh52oo', 'template_s3d22dm', parametros).then(
+        (response) => {
+          console.log('SUCCESS!', response.status, response.text);
+        },
+        (error) => {
+          console.log('FAILED...', error);
+        },
+      );
+    alert('E-mail enviado!')
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    new Glider(document.querySelector('.glider'), {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: '.dots',
+      arrows: {
+        prev: '.glider-prev',
+        next: '.glider-next'
+      },
+      responsive: [
+        {
+          // Tela >= 600px
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          // Tela >= 900px
+          breakpoint: 900,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          }
+        }
+      ]
+    });
+  });
+  

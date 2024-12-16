@@ -6,6 +6,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Wagner marcenaria</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap Icons-->
@@ -17,8 +18,22 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "k9_y-G_u4ngtcOeH7",
+      });
+   })();
+</script>
     </head>
+
+
+
     <body id="page-top">
+
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div class="container px-4 px-lg-5">
@@ -48,14 +63,55 @@
                     </div>
                 </div>
             </div>
-        </header>
-        
-        <!-- carrrosel-->
-        <section class="page-section bg-primary" id="about">
-            
 
-        </section>
-        <!-- carrrosel-->
+        
+        <!-- carousel -->
+        <style>
+            .glider-contain {
+              width: 90%;
+              margin: auto;
+              margin: 10px;
+            }
+            .glider-slide {
+              padding: 20px;
+              text-align: center;
+              background: #ffffff;
+              border: 1px solid #ffffff;
+              border-radius: 10px;
+            }
+          </style>
+            <div class="glider-contain">
+                <button class="glider-prev">«</button>
+                <div class="glider">
+                  <div class="glider-slide">
+                      <img src="/assets/img/carrosel/1.jfif" alt="Slide 1">
+                    </a>
+                  </div>
+                  <div class="glider-slide">
+                    <a href="https://example.com/2" target="_blank">
+                      <img src="https://via.placeholder.com/300x200?text=Slide+2" alt="Slide 2">
+                    </a>
+                  </div>
+                  <div class="glider-slide">
+                    <a href="https://example.com/3" target="_blank">
+                      <img src="https://via.placeholder.com/300x200?text=Slide+3" alt="Slide 3">
+                    </a>
+                  </div>
+                  <div class="glider-slide">
+                    <a href="https://example.com/4" target="_blank">
+                      <img src="https://via.placeholder.com/300x200?text=Slide+4" alt="Slide 4">
+                    </a>
+                  </div>
+                </div>
+                <button class="glider-next">»</button>
+                <div role="tablist" class="dots"></div>
+              </div>
+            
+        
+          <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+        
+    
+        <!-- carousel -->
         <!-- Services-->
         <section class="page-section" id="services">
             <div class="container px-4 px-lg-5">
@@ -210,8 +266,8 @@
 
                             <div class="d-none" id="submitSuccessMessage">
                                 <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
+                                    <div class="fw-bolder">Mensagem enviada com sucesso!</div>
+                                    
                                     <br />
                         
                                 </div>
@@ -222,7 +278,10 @@
                             <!-- an error submitting the form-->
                             <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                             <!-- Submit Button-->
-                            <div class="d-grid"><button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">ENVIAR!</button></div>
+                            <div class="d-grid">
+
+                                <button class="btn btn-primary btn-xl" id="submitButton" type="button" onclick="enviarEmail()">ENVIAR!</button>
+                            </div>
                         </form>
                     </div>
                 </div>
