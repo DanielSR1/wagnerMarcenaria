@@ -57,7 +57,7 @@ function enviarEmail(){
         contato: document.getElementById("phone").value,
         mensagem: document.getElementById("message").value,
     }
-    emailjs.send('service_xsh52oo', 'template_s3d22dm', parametros).then(
+    emailjs.send('service_yu40gpk', 'template_tp2unid', parametros).then(
         (response) => {
           console.log('SUCCESS!', response.status, response.text);
         },

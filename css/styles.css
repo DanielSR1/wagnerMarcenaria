@@ -10836,12 +10836,27 @@ body {
 }
 
 .page-section {
-  padding: 8rem 0;
+  padding: 3rem 0;
 }
 
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75) !important;
 }
+.phone-number {
+  font-family: 'Arial', sans-serif; /* Altere para a fonte desejada */
+  font-size: 18px; /* Ajuste o tamanho, se necessário */
+  font-weight: bold; /* Deixe o número mais destacado (opcional) */
+  color: #333; /* Mude a cor, se necessário */
+}
+
+.bi{
+  color: #25D366; /* Verde oficial do WhatsApp */
+}
+
+
+
+
+
 
 .btn-xl {
   padding: 1.25rem 2.25rem;

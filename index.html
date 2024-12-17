@@ -24,7 +24,7 @@
 <script type="text/javascript">
    (function(){
       emailjs.init({
-        publicKey: "k9_y-G_u4ngtcOeH7",
+        publicKey: "gdFTd1334_jP2uhP3",
       });
    })();
 </script>
@@ -67,20 +67,47 @@
         
         <!-- carousel -->
         <style>
+            
             .glider-contain {
-              width: 90%;
-              margin: auto;
-              margin: 10px;
-              margin-left: 20px;
+                width: 90%;
+                margin: auto;
+                margin: 10px;
+                margin-left: 70px;
             }
             .glider-slide {
-              padding: 5px;
-              text-align: center;
-              background: #ffffff;
-              border: 1px solid #ffffff;
-              border-radius: 10px;
+                padding: 5px;
+                text-align: center;
+                background: #ffffff;
+                border: 1px solid #ffffff;
+                border-radius: 10px;
             }
-          </style>
+        
+            /* Responsividade para telas menores */
+            @media (max-width: 768px) {
+                .glider-contain {
+                    margin-left: 20px; /* Reduzindo o espaço lateral */
+                }
+        
+                .glider-slide {
+                    padding: 10px; /* Aumentando o espaçamento interno */
+                    font-size: 14px; /* Ajuste no tamanho da fonte */
+                }
+            }
+        
+            @media (max-width: 480px) {
+                .glider-contain {
+                    width: 100%; /* Ocupa toda a largura da tela */
+                    margin: 5px; /* Ajustando margens para telas bem pequenas */
+                }
+        
+                .glider-slide {
+                    padding: 8px;
+                    font-size: 12px; /* Fonte menor para caber melhor */
+                }
+            }
+        </style>
+        
+        <h2 class="text-center mt-4 pt-6">TUDO ISSO AO SEU DISPOR</h2>
             <div class="glider-contain">
                 <button class="glider-prev">«</button>
                 <div class="glider">
@@ -121,7 +148,7 @@
         <!-- Services-->
         <section class="page-section" id="services">
             <div class="container px-4 px-lg-5">
-                <h2 class="text-center mt-0">Tudo Isso Ao Seu Dispor</h2>
+                
                 <hr class="divider" />
                 <div class="row gx-4 gx-lg-5">
                     <div class="col-lg-3 col-md-6 text-center">
@@ -221,15 +248,20 @@
         <section class="page-section bg-dark text-white">
             <div class="container px-4 px-lg-5 text-center">
                 <h2 class="mb-4">Entre em contato por Whatsapp ou E-mail!</h2>
-                <a class="btn btn-light btn-xl" href="">
+                <!-- Link do WhatsApp com target="_blank" -->
+                <a class="btn btn-light btn-xl" 
+                   href="https://api.whatsapp.com/send/?phone=5524999738037&text&type=phone_number&app_absent=0" 
+                   target="_blank" rel="noopener noreferrer">
                     <i class="bi bi-whatsapp me-2"></i>Whatsapp
                 </a>
-                <a class="btn btn-light btn-xl" href="">
+                
+                <!-- Link do E-mail (sem href definido) -->
+                <a class="btn btn-light btn-xl" href="#contact">
                     <i class="bi bi-envelope me-2"></i>E-mail
                 </a>
-                
             </div>
         </section>
+        
         <!-- Contact-->
         <section class="page-section" id="contact">
             <div class="container px-4 px-lg-5">
@@ -293,15 +325,17 @@
                 </div>
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-4 text-center mb-5 mb-lg-0">
-                        <i class="bi bi-whatsapp fs-2 mb-3 text-muted"></i>
-                        <div>(24) 999999999</div>
+                        <i class="bi bi-whatsapp fs-2 mb-3 ml-1 text-muted"></i>
+                        <div class="phone-number">(24) 99973-8037</div>
                     </div>
                 </div>
+                
             </div>
+            
         </section>
         <!-- Footer-->
         <footer class="bg-light py-5">
-            <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2024 - ATLAS</div></div>
+            <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2024 - WAGNER MARCENEIRO</div></div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
