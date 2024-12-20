@@ -10971,6 +10971,9 @@ header.masthead h1, header.masthead .h1 {
     .highlighted-text {
         color: white !important; /* Força a prioridade para sobrepor outras regras */
     }
+    .over{
+      color: #6c757d !important;
+    }
 }
   header.masthead p {
     font-size: 1.15rem;
