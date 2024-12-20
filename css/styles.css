@@ -140,8 +140,6 @@ h2, .h2 {
 
 h3, .h3 {
   font-size: calc(1.3rem + 0.6vw);
-  color: #000000 !important;
-
 }
 @media (min-width: 1200px) {
   h3, .h3 {
@@ -151,7 +149,6 @@ h3, .h3 {
 
 h4, .h4 {
   font-size: calc(1.275rem + 0.3vw);
-  color: #ffffff
 }
 @media (min-width: 1200px) {
   h4, .h4 {
@@ -8094,8 +8091,7 @@ textarea.form-control-lg {
 
 .text-muted {
   --bs-text-opacity: 1;
-  color: #ffffff !important;
-  
+  color: #6c757d
 }
 
 .text-black-50 {
@@ -10957,28 +10953,21 @@ header.masthead {
 header.masthead h1, header.masthead .h1 {
   font-size: 2.25rem;
 }
+@media (max-width: 992px) {
+  .responsive-text {
+    color: white;
+  }
+}
+
 @media (min-width: 992px) {
   header.masthead {
     height: 100vh;
     min-height: 40rem;
     padding-top: 4.5rem;
     padding-bottom: 0;
-    .h4{
-      color:#000000;
-    }
   }
-  @media (min-width: 992px) {
-    .highlighted-text {
-        color: white !important; /* Força a prioridade para sobrepor outras regras */
-    }
-  .container .over {
-    color: white !important;
-  }
-
-}
   header.masthead p {
     font-size: 1.15rem;
-    color: #ffffff  !important;
   }
   header.masthead h1, header.masthead .h1 {
     font-size: 3rem;
