@@ -10964,6 +10964,7 @@ header.masthead h1, header.masthead .h1 {
   }
   header.masthead p {
     font-size: 1.15rem;
+    color: #000000 !important;
   }
   header.masthead h1, header.masthead .h1 {
     font-size: 3rem;
