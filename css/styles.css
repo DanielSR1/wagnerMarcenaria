@@ -10966,8 +10966,12 @@ header.masthead h1, header.masthead .h1 {
     .h4{
       color:#000000;
     }
-    
   }
+  @media (min-width: 992px) {
+    .highlighted-text {
+        color: white !important; /* Força a prioridade para sobrepor outras regras */
+    }
+}
   header.masthead p {
     font-size: 1.15rem;
     color: #ffffff  !important;
